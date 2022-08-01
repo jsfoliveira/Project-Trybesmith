@@ -13,7 +13,6 @@ class UserService {
     const result = await this.model.create(user);
     return result;
   }
-
 }
 
 export default UserService;

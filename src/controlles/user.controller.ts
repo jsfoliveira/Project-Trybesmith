@@ -14,7 +14,6 @@ class UserController {
     res.status(StatusCodes.CREATED).json(result);
     // falta validação do token
   };
-
 }
 
 export default UserController; 
