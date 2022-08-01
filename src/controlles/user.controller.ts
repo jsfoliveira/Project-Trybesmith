@@ -4,15 +4,18 @@ import { StatusCodes } from 'http-status-codes';
 
 import UserService from '../services/user.service';
 
+import tokenMiddleware from '../middleware/token';
+
 class UserController {
-  constructor(private userService = new UserService()) { }
+  constructor(private usersService = new UserService()) { }
 
   public create = async (req: Request, res: Response) => {
-    const user = req.body;
+    const users = req.body;
+    const result = await this.usersService.create(users);
 
-    const result = await this.userService.create(user);
-    res.status(StatusCodes.CREATED).json(result);
-    // falta validação do token
+    const token = tokenMiddleware.create(result);
+
+    res.status(StatusCodes.CREATED).json({ token });
   };
 }
 
