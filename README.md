@@ -1,6 +1,6 @@
 # 	:woman_technologist: Project Trybesmith
 
-Esse projeto contém uma série de informações sobre o que eu aprendi aqui na Trybe ao longo do curso de desenvolvimento web da Trybe. <br>Nele pude desenvolver habilidades como usar a linguagem TypScript.
+Esse projeto contém uma série de informações sobre o que eu aprendi aqui na Trybe ao longo do curso de desenvolvimento web da Trybe. <br>Nele pude desenvolver habilidades como usar a linguagem TypeScript.
 
 ## :rocket:Começando
 Esse projeto foi proposto pelo curso de desenvolvimento web da Trybe.
